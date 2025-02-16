@@ -1,0 +1,143 @@
+/* Đặt body và content-wrapper thành flex container để định vị các phần tử */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Đảm bảo trang chiếm toàn bộ chiều cao màn hình */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+/* Wrapper chứa header và main, giúp nội dung đẩy footer xuống */
+.content-wrapper {
+    flex: 1; /* Cho phép mở rộng nội dung để đẩy footer xuống cuối */
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    background-color: #2980b9;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Main styling */
+main {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for cart items */
+.cart-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-item h3 {
+    margin: 0;
+    color: #333;
+    font-size: 18px;
+}
+
+.cart-item p {
+    margin: 5px 0;
+    color: #555;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+input[type="number"] {
+    width: 60px;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+}
+
+td {
+    color: #555;
+}
+
+button {
+    padding: 8px 12px;
+    margin: 5px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.action-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn-back, .btn-checkout {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+}
+
+.btn-back:hover, .btn-checkout:hover {
+    background-color: #218838;
+}
+
+
+/* Footer luôn nằm cuối trang */
+footer {
+    background-color: #2980b9;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto; /* Đảm bảo footer luôn ở dưới cùng */
+    border-top: 2px solid #ddd;
+}

@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2980b9; /* Green color */
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-table th, .order-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.order-table th {
+    background-color: #2980b9; /* Green color */
+    color: white;
+}
+
+.order-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.continue-shopping {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #2980b9; /* Green color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.continue-shopping:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

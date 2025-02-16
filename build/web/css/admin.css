@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex; /* Sử dụng flexbox */
+    flex-direction: column; /* Sắp xếp theo cột */
+    align-items: center; /* Căn giữa nội dung theo chiều ngang */
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.button-container{
+    display: flex; /* Sử dụng flexbox */
+    flex-direction: column;
+    width: 25%;
+    
+    justify-content: center; /* Căn giữa các nút */
+    margin-top: 60px; /* Khoảng cách trên để tách khỏi bảng */
+
+}
+.button-container button{
+    text-align: center;
+    height: 40px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 7px;
+}
+
+.button-container .back-btn{
+    text-align: center;
+}
+
+.back-btn button:hover {
+    opacity: 0.8; /* Tăng độ mờ khi hover */
+}
+.password-container {
+    position: relative; /* Để có thể định vị con mắt bên trong */
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px; /* Khoảng cách từ bên phải */
+    top: 50%;
+    transform: translateY(-50%) ; /* Đưa con mắt lên giữa */
+    cursor: pointer; /* Con trỏ chuột thay đổi khi hover */
+    font-size: 18px; /* Kích thước của biểu tượng */
+    pointer-events: all; /* Cho phép sự kiện click đến biểu tượng con mắt */
+}
+
+.edit-btn{
+    font-size: 30px;
+    color:#2980b9;
+}
+
+.delete-btn{
+    margin-left: 15px;
+    font-size: 30px;
+    color: #f44336;
+}

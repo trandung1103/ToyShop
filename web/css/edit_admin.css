@@ -1,0 +1,102 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Đối xứng cho input */
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px); /* Đảm bảo ô nhập chiếm toàn bộ chiều rộng */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi chiều rộng */
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2980b9; /* Màu xanh lá cho nút Update */
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049; /* Tối màu khi hover */
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #2196F3; /* Màu xanh dương cho Back */
+    color: white;
+    border-radius: 5px;
+}
+
+.back-btn:hover {
+    background-color: #1976D2; /* Tối màu khi hover */
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+/* Các thuộc tính cho ô nhập mật khẩu với biểu tượng con mắt */
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px); /* Chiếm toàn bộ chiều rộng trừ padding */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi chiều rộng */
+}
+
+/* Các thuộc tính cho ô nhập mật khẩu với biểu tượng con mắt */
+.password-container {
+    position: relative; /* Để có thể định vị con mắt bên trong */
+    display: inline-block; /* Để giữ cho container và input nằm cùng hàng */
+    width: calc(100% ); /* Đảm bảo ô mật khẩu chiếm toàn bộ chiều rộng của bảng */
+}
+
+/* Biểu tượng con mắt */
+.eye-icon {
+    position: absolute;
+    right: 10px; /* Khoảng cách từ bên phải */
+    top: 50%;
+    transform: translateY(-50%) translateX(-90%); /* Đưa con mắt lên giữa */
+    cursor: pointer; /* Con trỏ chuột thay đổi khi hover */
+    font-size: 18px; /* Kích thước của biểu tượng */
+}

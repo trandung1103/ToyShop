@@ -1,0 +1,78 @@
+/* edit_user.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+label {
+    display: block; /* Để mỗi label chiếm một dòng */
+    margin: 10px 0 5px; /* Khoảng cách cho label */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100%); /* Đảm bảo ô nhập chiếm toàn bộ chiều rộng trừ chỗ cho con mắt */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi chiều rộng */
+}
+
+.password-container {
+    position: relative; /* Để có thể định vị con mắt bên trong */
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px; /* Khoảng cách từ bên phải */
+    top: 50%;
+    transform: translateY(-50%) ; /* Đưa con mắt lên giữa */
+    cursor: pointer; /* Con trỏ chuột thay đổi khi hover */
+    font-size: 18px; /* Kích thước của biểu tượng */
+    pointer-events: all; /* Cho phép sự kiện click đến biểu tượng con mắt */
+}
+
+input[type="submit"] {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2980b9; /* Màu xanh lá cho nút Update */
+    color: white;
+    cursor: pointer;
+    margin-top: 20px; /* Khoảng cách từ nút đến ô nhập trên */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Tối màu khi hover */
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2980b9; /* Màu xanh lá cho nút Update */
+    color: white;
+    cursor: pointer;
+    margin-top: 20px; /* Khoảng cách từ nút đến ô nhập trên */
+}
+
+button:hover {
+    background-color: #45a049; /* Tối màu khi hover */
+}
